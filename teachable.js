@@ -7,8 +7,9 @@
       $("html").attr("data-wf-status","1");
     
       setTimeout(function(){
-        $("html").append('<script src="https://uploads-ssl.webflow.com/5dd6ab56eab36e61da7d4515/js/webflow.11c8e3c9a.js" type="text/javascript"></script>');
-        alert("triggered1");
+        var newScript = document.createElement("script");
+        newScript.src = "https://uploads-ssl.webflow.com/5dd6ab56eab36e61da7d4515/js/webflow.11c8e3c9a.js";
+        document.getElementsByTagName("HTML")[0].appendChild(newScript);
       },500);
   });
 }(jQuery));
