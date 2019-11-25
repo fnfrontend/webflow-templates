@@ -2,8 +2,7 @@
 
   var htmlSelec = document.getElementsByTagName("HTML")[0];
   htmlSelec.setAttribute("data-wf-domain","click-funnels-treasure-chest.webflow.io");
-  htmlSelec.setAttribute("data-wf-page","5dd6ab56eab36e72927d4528");
-  //5dd6ab56eab36e5bec7d4535
+  htmlSelec.setAttribute("data-wf-page","5dd6ab56eab36e44537d4519");
   htmlSelec.setAttribute("data-wf-site","5dd6ab56eab36e61da7d4515");
   htmlSelec.setAttribute("data-wf-status","1");
 
