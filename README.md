@@ -1,6 +1,5 @@
 # webflow - HTML / CSS / JS
 
-# Description:
 
 Hello world!
 
