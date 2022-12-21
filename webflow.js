@@ -7823,7 +7823,7 @@ Webflow.define('brand', module.exports = function ($) {
   // Module methods
 
   api.ready = function () {
-    /*var shouldBrand = $html.attr('data-wf-status');
+    var shouldBrand = $html.attr('data-wf-status');
     var publishedDomain = $html.attr('data-wf-domain') || '';
 
     if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
@@ -7835,7 +7835,7 @@ Webflow.define('brand', module.exports = function ($) {
       ensureBrand();
       setTimeout(ensureBrand, 500);
       $(doc).off(fullScreenEvents, onFullScreenChange).on(fullScreenEvents, onFullScreenChange);
-    }*/
+    }
   };
 
   function onFullScreenChange() {
@@ -14934,7 +14934,7 @@ function getQuerySelector(_ref) {
       nodeId = pair[1]; // Short circuit query if we're on the wrong page
 
       if (pageId !== document.documentElement.getAttribute(WF_PAGE)) {
-        return null;
+        // return null;
       }
     }
 
@@ -14949,7 +14949,7 @@ function getValidDocument(pageId) {
     return document;
   }
 
-  return null;
+  return document; // null
 }
 
 function queryDocument(baseSelector, descendantSelector) {
