@@ -7823,7 +7823,7 @@ Webflow.define('brand', module.exports = function ($) {
   // Module methods
 
   api.ready = function () {
-    var shouldBrand = $html.attr('data-wf-status');
+    /*var shouldBrand = $html.attr('data-wf-status');
     var publishedDomain = $html.attr('data-wf-domain') || '';
 
     if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
@@ -7835,7 +7835,7 @@ Webflow.define('brand', module.exports = function ($) {
       ensureBrand();
       setTimeout(ensureBrand, 500);
       $(doc).off(fullScreenEvents, onFullScreenChange).on(fullScreenEvents, onFullScreenChange);
-    }
+    }*/
   };
 
   function onFullScreenChange() {
